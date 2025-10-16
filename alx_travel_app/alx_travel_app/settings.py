@@ -16,6 +16,9 @@ from pathlib import Path
 env = environ.Env()
 environ.Env.read_env()
 
+CHAPA_SECRET_KEY = os.getenv('CHAPA_SECRET_KEY')
+CHAPA_BASE_URL = os.getenv('CHAPA_BASE_URL')
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
